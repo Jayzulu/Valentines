@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay! You Said YES! 💖</title>
+    <link rel="stylesheet" href="yes_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head> 
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">💖 Dakal a salamat! <br> Gagawan kung espesyal ing aldong ini para keka.! <br></h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+        </div>
+    </div>
+
+    <script>
+        
+        for (let i = 0; i < 15; i++) {
+        let heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "💖";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+        document.body.appendChild(heart);
+    }
+    </script>
+</body> 
+</html>
